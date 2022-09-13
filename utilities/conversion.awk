@@ -1,0 +1,63 @@
+#!/bin/bash
+
+#================================================================================================
+#
+#  FILE:
+#	conversion.awk
+#
+#  DESCRIPTION:
+#	Convert CSV output file.
+#
+#  USAGE:
+#	awk -f conversion.awk <file>
+#
+#================================================================================================
+
+
+BEGIN  {
+
+	# INPUT VAR: number of test repetitions
+	#n=10 or 4
+	
+	# field separator
+	FS=" "
+
+	# line number
+	ln=1
+
+	# average time
+	avt=0
+
+	# average number of successes
+	av=0	
+
+	# success value (1 or 0 in the Result column indicating success)
+	sv=1
+}
+
+ 
+{ 	
+	# update avt
+	avt=avt+$NF
+
+	# update av
+	if ($(NF-1)==sv)
+		av=av+1
+
+	# print av and avt field
+	if ((ln%n)==0) {
+		print $0 " " avt/n " " av # "/"n
+		avt=0
+		av=0
+	}
+
+	# increment line number
+	ln=ln+1
+}
+
+
+END {
+	
+}
+
+

@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <assert.h>
+#include <string.h>
+#include <errno.h>
+#include <limits.h>
+int main(int argc, char* argv[]) {
+int N = 10 ; if (argc > N) { const char *long_string1="31"; if (strcmp(argv[1],long_string1)==0) { long long int m2=144; long long int j2=0; while (j2<m2) { printf("%lld\n", j2); j2++; } size_t c3=0; size_t count3=0; const size_t occurrences3=1; const char valid_char3='c'; for (c3=0; c3<strlen(argv[3]); c3++) { if (argv[3][c3] == valid_char3) count3++; } if (count3 == occurrences3) { long long int i14=atoll(argv[4]); long long int i24=120; if (i14==i24) { long long int m5=149; long long int j5=0; for (; j5<m5; j5++) { printf("%lld\n", j5); } size_t c6=0; size_t count6=0; const size_t occurrences6=7; const char valid_char6='c'; for (c6=0; c6<strlen(argv[6]); c6++) { if (argv[6][c6] == valid_char6) count6++; } if (count6 == occurrences6) { long long int i17=atoll(argv[7]); long long int i27=180; if (i17==i27) { long long int m8=146; long long int j8=0; while (j8<m8) { printf("%lld\n", j8); j8++; } size_t c9=0; size_t count9=0; const size_t occurrences9=4; const char valid_char9='c'; for (c9=0; c9<strlen(argv[9]); c9++) { if (argv[9][c9] == valid_char9) count9++; } if (count9 != occurrences9) { printf("%d\n", argc); } else { const char *str10=argv[10]; size_t l10=0; size_t h10=strlen(str10); if (h10>=8) { h10=h10-1; while(h10>l10) { if (str10[l10]!= str10[h10]) { printf("%d\n", argc); return 0; } l10=l10+1; h10=h10-1; } assert(0==1); } } } } } else { printf("%d\n", argc); } } } } else { printf("Error: invalid number of arguments"); } return 0;}

@@ -1,0 +1,1 @@
+INIT(2,SC(1,"1",1,SC(2,"2",2,ASSERT_BUG)))

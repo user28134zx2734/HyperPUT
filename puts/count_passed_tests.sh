@@ -30,7 +30,7 @@ for f in $LOG_DIR/comb"$LENGTH"*.csv; do
 	echo "Processing ""$f"" ..."
 
 	# Consider only passed tests
-	PASSED="$(cat $f | egrep -v " 0$" | uniq)"
+	PASSED="$(cat $f | egrep -v " 0$" | sort | uniq)"
 	
 	# echo "$PASSED"
 
